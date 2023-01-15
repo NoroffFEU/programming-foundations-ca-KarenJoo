@@ -814,7 +814,12 @@ for (var i = 0; i < characters.length; i++) {
   }
 }
 
-// objects
+// * Null, Objects and arrays of objects * //
+
+// Truthiness and Falsiness
+// Falsy values = undefined, null, 0, ""
+// Truthy values = [], {}, "0"
+
 
 var dog = {
   name: "Tripod",
@@ -877,11 +882,20 @@ console.log(products[1] === product2);
 
 // looping through the array of objects using array prototype methods
 
-for (var i = 0; i < products.length; i++) {
-  var product = products[i];
-  var productName = product.name;
-  console.log(productName);
-}
+// for (var i = 0; i < products.length; i++) {
+//  var product = products[i];
+//  var productName = product.name;
+//  console.log(productName);
+// }
+
+// Finding objects in an array using array prototype method with product1 and product2 as example
+
+let searchString = "Wrench";
+let myObject = products.find(function (product) {
+return product.name === searchString;
+});
+
+console.log(myObject);
 
 // var newsItem1 = {
 // headline: "Headline 1",
@@ -921,3 +935,77 @@ for (var i = 0; i < news.length; i++) {
     item.summary +
     "</p>";
 }
+
+// Question 1 Console log the price property from the object below:
+
+let product = {
+	name: "Chicken feet",
+	price: 149.99,
+};
+
+console.log(product.price);
+
+// Question 2 Loop through the array below and console log each colour property.
+
+let animals = [
+	{
+		type: "cat",
+		colour: "black",
+	},
+	{
+		type: "elephant",
+		colour: "grey",
+	},
+	{
+		type: "dog",
+		colour: "brown",
+	},
+	{
+		type: "zebra",
+		colour: "black and white",
+	},
+];
+
+for (let i = 0; i < animals.length; i++) {
+    console.log(animals[i].color);
+}
+
+// Question 3 Loop through the array below and console log each name property only if it is on special.
+
+let dinnerOptions = [
+	{ name: "Fish and Dips", price: 11.95, onSpecial: true },
+	{ name: "Bacon and Frogs", price: 12.99, onSpecial: false },
+	{ name: "Mince Flies", price: 19.0, onSpecial: true },
+];
+
+for (let i = 0; i < dinnerOptions.length; i ++) {
+    if (dinnerOptions[i].onSpecial) {
+        console.log(dinnerOptions[i].name);
+    }
+}
+
+// Question 4 Loop through the array below and log each person's name and surname if they are between the ages of 20 and 50 (including 20 and 50):
+
+let people = [
+	{
+		firstName: "Burt",
+		lastName: "Smacharach",
+		age: 35,
+	},
+	{
+		firstName: "Elvis",
+		lastName: "Deadly",
+		age: 55,
+	},
+	{
+		firstName: "Susan",
+		lastName: "Sarongson",
+		age: 42,
+	},
+	{
+		firstName: "Big",
+		lastName: "Gabe",
+		age: 20,
+	},
+];
+

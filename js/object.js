@@ -1,19 +1,44 @@
 const backpack = {
   brand: "Silva",
   liters: 25,
-  costs: 799,
+  currentPrice: 799,
+  originalPrice: 899, 
   valuta: "NOK",
   onSale: true,
   isWaterProof: true,
+  Lightweight: null, 
   features: ["Waterproof", "Flexible", "Breathable", "Reflective"]
   };
 
+  let houseplants = [
+    { name: "Pilea", price: 10.00, isPlant: true },
+    { name: "Strelitzia", price: 25.00, isPlant: true },
+    { name: "Cactus", price: 5.00, isPlant: false }
+  ];
 
-// String: brand
-// Number: liters
-// Boolean: true
+
+// String: brand, valuta, features, name
+// Number: liters, currentPrice, originalPrice, price
+// Boolean: onSale, isWaterProof, isPlant
 // Array: features
-// Function:
+
+// * Looping through the array and console logging each houseplant only if it is a plant * //
+
+for (let i = 0; i < houseplants.length; i ++) {
+    if (houseplants[i].isPlant) {
+        console.log(houseplants[i].name);
+    }
+}
+// * Accessing data within the object * //
+
+console.log(backpack.brand);
+
+// accessing the objects properties and the difference between a falsy and truthy value
+
+console.log(backpack.Lightweight);
+// null
+console.log(backpack.material);
+// Undefined 
 
 // * Function to add new features * //
 
@@ -37,4 +62,5 @@ for (let i = 0; i < features.length; i++) {
 
 // including added feature "Windproof"
 
+// * counting features * //
 
