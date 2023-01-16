@@ -1020,22 +1020,70 @@ for (var i = 0; i < people.length; i++) {
 // Question 5 Select the ul element in the HTML file, loop through the array below and create a li element containing the product name and price properties.
 
 let productNames = [
-	{
-		name: "Elephant eggs",
-		price: 45.0,
-	},
-	{
-		name: "Bucket of water",
-		price: 459.99,
-	},
-	{
-		name: "4 cabbages",
-		price: 500.95,
-	},
+  {
+    name: "Elephant eggs",
+    price: 45.0,
+  },
+  {
+    name: "Bucket of water",
+    price: 459.99,
+  },
+  {
+    name: "4 cabbages",
+    price: 500.95,
+  },
 ];
 
 let productContainer = document.querySelector("ul");
 
 for (let i = 0; i < productNames.length; i++) {
-    productContainer.innerHTML += "<li>" + productNames[i].name + " - " + productNames[i].price + "</li>";
+  productContainer.innerHTML +=
+    "<li>" + productNames[i].name + " - " + productNames[i].price + "</li>";
 }
+
+// * Functions * //
+
+// declaring the function is only used to declare not call the function
+
+function logWord(theWord) {
+  console.log("one");
+}
+
+// call the function
+logWord();
+// one
+
+// passing in a value as the theWord argument
+
+function logWord(theWord) {
+  console.log(theWord);
+}
+
+logWord("hello");
+
+// declaring a function with two arguments
+function addTwoNumbers(number1, number2) {
+  let sum = number1 + number2;
+  console.log(sum);
+}
+
+// calling the function to pass two arguments in
+addTwoNumbers(3, 4);
+//number1 = 3, number2 = 4 sum = 3 + 4 console 7
+
+let helloThere = document.querySelector("h4");
+let button = document.querySelector("button");
+let buttonColor = document.querySelector(".color");
+
+function changeHelloThere() {
+  helloThere.innerHTML = "How are you?";
+}
+
+button.onclick = changeHelloThere;
+
+function changeColor() {
+  let body = document.querySelector("body");
+  body.style.backgroundColor = "yellow";
+}
+
+buttonColor.onclick = changeColor;

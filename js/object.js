@@ -39,6 +39,7 @@ for (var i = 0; i < houseplants.length; i++) {
     console.log(plantName);
   }
 }
+
 // * Accessing data within the object * //
 
 console.log(backpack.brand);
