@@ -820,7 +820,6 @@ for (var i = 0; i < characters.length; i++) {
 // Falsy values = undefined, null, 0, ""
 // Truthy values = [], {}, "0"
 
-
 var dog = {
   name: "Tripod",
   breed: "labrador",
@@ -874,7 +873,7 @@ var product2 = {
 };
 
 // an array of product objects
-var products = [product1, product2];
+let products = [product1, product2];
 
 // accessing specific objects based on it's index
 console.log(products[1]);
@@ -892,7 +891,7 @@ console.log(products[1] === product2);
 
 let searchString = "Wrench";
 let myObject = products.find(function (product) {
-return product.name === searchString;
+  return product.name === searchString;
 });
 
 console.log(myObject);
@@ -939,8 +938,8 @@ for (var i = 0; i < news.length; i++) {
 // Question 1 Console log the price property from the object below:
 
 let product = {
-	name: "Chicken feet",
-	price: 149.99,
+  name: "Chicken feet",
+  price: 149.99,
 };
 
 console.log(product.price);
@@ -948,64 +947,95 @@ console.log(product.price);
 // Question 2 Loop through the array below and console log each colour property.
 
 let animals = [
-	{
-		type: "cat",
-		colour: "black",
-	},
-	{
-		type: "elephant",
-		colour: "grey",
-	},
-	{
-		type: "dog",
-		colour: "brown",
-	},
-	{
-		type: "zebra",
-		colour: "black and white",
-	},
+  {
+    type: "cat",
+    colour: "black",
+  },
+  {
+    type: "elephant",
+    colour: "grey",
+  },
+  {
+    type: "dog",
+    colour: "brown",
+  },
+  {
+    type: "zebra",
+    colour: "black and white",
+  },
 ];
 
 for (let i = 0; i < animals.length; i++) {
-    console.log(animals[i].color);
+  console.log(animals[i].color);
 }
 
 // Question 3 Loop through the array below and console log each name property only if it is on special.
 
 let dinnerOptions = [
-	{ name: "Fish and Dips", price: 11.95, onSpecial: true },
-	{ name: "Bacon and Frogs", price: 12.99, onSpecial: false },
-	{ name: "Mince Flies", price: 19.0, onSpecial: true },
+  { name: "Fish and Dips", price: 11.95, onSpecial: true },
+  { name: "Bacon and Frogs", price: 12.99, onSpecial: false },
+  { name: "Mince Flies", price: 19.0, onSpecial: true },
 ];
 
-for (let i = 0; i < dinnerOptions.length; i ++) {
-    if (dinnerOptions[i].onSpecial) {
-        console.log(dinnerOptions[i].name);
-    }
+for (let i = 0; i < dinnerOptions.length; i++) {
+  if (dinnerOptions[i].onSpecial) {
+    console.log(dinnerOptions[i].name);
+  }
 }
 
 // Question 4 Loop through the array below and log each person's name and surname if they are between the ages of 20 and 50 (including 20 and 50):
 
 let people = [
+  {
+    firstName: "Burt",
+    lastName: "Smacharach",
+    age: 35,
+  },
+  {
+    firstName: "Elvis",
+    lastName: "Deadly",
+    age: 55,
+  },
+  {
+    firstName: "Susan",
+    lastName: "Sarongson",
+    age: 42,
+  },
+  {
+    firstName: "Big",
+    lastName: "Gabe",
+    age: 20,
+  },
+];
+
+for (var i = 0; i < people.length; i++) {
+  let age = people[i].age;
+  let fullName = people[i].firstName + " " + people[i].lastName;
+
+  if (age >= 20 && age <= 50) {
+    console.log(fullName);
+  }
+}
+
+// Question 5 Select the ul element in the HTML file, loop through the array below and create a li element containing the product name and price properties.
+
+let productNames = [
 	{
-		firstName: "Burt",
-		lastName: "Smacharach",
-		age: 35,
+		name: "Elephant eggs",
+		price: 45.0,
 	},
 	{
-		firstName: "Elvis",
-		lastName: "Deadly",
-		age: 55,
+		name: "Bucket of water",
+		price: 459.99,
 	},
 	{
-		firstName: "Susan",
-		lastName: "Sarongson",
-		age: 42,
-	},
-	{
-		firstName: "Big",
-		lastName: "Gabe",
-		age: 20,
+		name: "4 cabbages",
+		price: 500.95,
 	},
 ];
 
+let productContainer = document.querySelector("ul");
+
+for (let i = 0; i < productNames.length; i++) {
+    productContainer.innerHTML += "<li>" + productNames[i].name + " - " + productNames[i].price + "</li>";
+}
