@@ -1087,3 +1087,117 @@ function changeColor() {
 }
 
 buttonColor.onclick = changeColor;
+
+// Question 1 Declare and call a function that logs the string "What the func is this nonsense?"
+
+// declaring the function
+
+function logString() {
+  console.log("What the func is this nonsense?");
+}
+
+// calling the function
+
+logString();
+
+// Question 2 Create and call a function with two arguments, firstName and lastName. The function should log both the argument values with a space between them.
+
+// declaring function with multiple arguments
+function thisName(firstName, lastName) {
+  let thatName = firstName + " " + lastName;
+  console.log(thatName);
+}
+
+// calling function with multiple arguments
+
+thisName("Dora", "Nordmann");
+
+// Question 3 Create a function with two arguments, firstNumber and secondNumber. Inside the function, check the type of the arguments.If they are numbers, multiply them and return the result. If either of them are not numbers return the message: "Please supply number values". Call the function, assign the return value to a variable called result(thisResult) and log the variable.
+
+function twoNumbers(firstNumber, secondNumber) {
+  // type of argument values
+  let typeofOne = typeof firstNumber;
+  let typeofTwo = typeof secondNumber;
+
+  // if firstNumber or secondNumber not equals a number, only one condition needs to pass
+  if (typeofOne !== "number" || typeofTwo !== "number") {
+    return "Please supply number values";
+  }
+  // multiply the numbers
+  return firstNumber * secondNumber;
+}
+
+// call the function
+let thisResult = twoNumbers(3, 5);
+console.log(thisResult);
+
+// Question 4 Create a function with three arguments. Try and convert each argument to a number. If any of the arguments cannot be converted to a number, return the message: "Invalid argument types". If all arguments are numbers or can be converted to numbers, add them all and return the result. Select the p element on the page and assign the result of the function call to be its innerHTML value.
+
+// declaring a function with multiple arguments
+function theseArguments(arg1, arg2, arg3) {
+  // converting arguments to a number by using parseInt/parseFloat
+  let convertedArg1 = parseInt(arg1);
+  let convertedArg2 = parseInt(arg2);
+  let convertedArg3 = parseInt(arg3);
+
+  //NaN = Not a number // one of the arguments needs to pass
+  if (isNaN(convertedArg1) || isNaN(convertedArg2) || isNaN(convertedArg3)) {
+    return "Invalid argument types";
+  }
+
+  // adding all the arguments converted to numbers and returning the result
+  return convertedArg1 + convertedArg2 + convertedArg3;
+}
+
+// Question 5 Select the button with the class heading (buttonclick) using document.querySelector. Create a function and assign it to the onclick property of the button. The function should select the h1 element on the page and update its innerHTML without replacing the existing value. After clicking once, the innerHTML value should be Functions: Updated. Clicking the button again would mean the heading reads: Functions: Updated: Updated
+
+let buttonHeading = document.querySelector(".button");
+
+buttonHeading.onclick = function () {
+  let button = document.querySelector("h4");
+  button.innerHTML += ": Updated";
+};
+
+// Question 6 Select the button with the class title(buttontitle). When this is button is clicked, update the title of the page (not the heading, the HTML page title visible in the browser tab) to read: I've been updated. Hint: use console.dir(document) to view the properties available on the document object.
+
+let tabTitle = document.querySelector("title");
+let buttonTitle = document.querySelector(".buttontitle");
+
+console.dir(document);
+
+function changeTitle() {
+  document.buttonTitle = "I've been updated";
+}
+
+tabTitle.onclick = changeTitle;
+// can not get this to function
+
+// Question 7 Select the buttons with the classes red, orange and pink. Clicking on these buttons should change the background of the page to red, orange and pink respectively.
+
+let red = document.querySelector(".red");
+let orange = document.querySelector(".orange");
+let pink = document.querySelector(".pink");
+
+console.dir(red);
+
+function backgroundRed() {
+  body.style.backgroundColor = "red";
+}
+
+red.onclick = backgroundRed;
+
+console.dir(orange);
+
+function backgroundOrange() {
+  body.style.backgroundColor = "orange";
+}
+
+orange.onclick = backgroundOrange;
+
+console.dir(pink);
+
+function backgroundPink() {
+  body.style.backgroundColor = "pink";
+}
+
+pink.onclick = backgroundPink;

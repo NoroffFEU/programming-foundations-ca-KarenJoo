@@ -1,3 +1,5 @@
+// * Objects backpack and houseplants
+
 const backpack = {
   brand: "Silva",
   liters: 25,
@@ -9,6 +11,8 @@ const backpack = {
   lightWeight: null,
   features: ["Waterproof", "Flexible", "Breathable", "Reflective"],
 };
+
+console.log(backpack);
 
 let houseplants = [
   { name: "Pilea", price: 10.0, isPlant: true },
@@ -63,13 +67,9 @@ features.push("Windproof");
 
 console.log(features);
 
-// * Function to access every item in an array by using a for loop
+// * Function to access every item in an array by using a for loop, including added feature "Windproof"
 
 for (let i = 0; i < features.length; i++) {
   let fea = features[i];
   console.log(fea);
 }
-
-// including added feature "Windproof"
-
-// * counting features * //
