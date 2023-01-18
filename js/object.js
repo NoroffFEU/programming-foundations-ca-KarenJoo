@@ -55,6 +55,10 @@ console.log(backpack.lightWeight);
 console.log(backpack.material);
 // Undefined
 
+// checking what value null is
+
+console.log(typeof lightWeight);
+
 // * Function to add new features * //
 
 let features = ["Waterproof", "Flexible", "Breathable", "Reflective"];
