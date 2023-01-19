@@ -77,3 +77,11 @@ for (let i = 0; i < features.length; i++) {
   let fea = features[i];
   console.log(fea);
 }
+
+// Function 
+
+function backpackFeatures() {
+    console.log("Waterproof");
+}
+
+backpackFeatures();
