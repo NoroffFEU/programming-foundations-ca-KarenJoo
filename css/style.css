@@ -7,9 +7,10 @@ header {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px grey solid;
+  border-bottom: 1px rgb(125, 125, 125)255, 226, 226) solid;
 }
 
 main {
@@ -34,10 +35,33 @@ td {
   background: white;
 }
 
+.ca-link {
+  font-size: 15px;
+  border-style: solid;
+  margin: 0 20px 30px 20px;
+  align-items: center;
+  background-color: #dce7f3;
+  padding: 10px;
+  box-shadow: 1px 1px 2px #000000;
+}
+
 .total {
   text-align: right;
   background: transparent;
   font-weight: bold;
+}
+
+.user {
+  font-size: 12px;
+  margin: 20px;
+}
+
+.hello-container,
+.shopping-container {
+  border-style: solid;
+  margin: 0 auto 20px;
+  padding: 10px 20px 20px 10px;
+  box-shadow: 1px 1px 2px #000000;
 }
 
 .key {
@@ -49,15 +73,15 @@ td {
 }
 
 .string {
-  background: #b9ffcc;
+  background: #b1d0ef;
 }
 
 .number {
-  background: #b1d9f1;
+  background: #f1bdb1;
 }
 
 .boolean {
-  background: #e7c3ef;
+  background: #c3efd3;
 }
 
 .key > div {
@@ -76,7 +100,7 @@ td {
 h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #1469bd;
-  font-size: 3em;
+  font-size: 2em;
   margin: 0;
 }
 
@@ -94,7 +118,6 @@ h4 {
   font-family: "Courier New", Courier, monospace;
 }
 
-
 .container {
   margin: 0 auto;
   max-width: 960px;
@@ -103,16 +126,51 @@ h4 {
 .red,
 .orange,
 .pink {
-	background-color: red;
-	padding: 10px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	margin: 3px;
+  background-color: red;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 3px;
 }
 
 .orange {
-	background-color: orange;
+  background-color: orange;
 }
 
 .pink {
-	background-color: pink;
+  background-color: pink;
+}
+
+/* object */
+
+.silva-container {
+  margin: 30px auto;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  padding: 20px;
+  box-shadow: 1px 1px 2px #000000;
+}
+
+.silva-container h2 {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.silva-container img {
+  height: 400px;
+  width: auto;
+}
+
+.object-buttons {
+  margin: 0 auto;
+}
+
+.button1,
+.button2,
+.button3,
+.button4 {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 2rem;
 }
