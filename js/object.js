@@ -78,10 +78,46 @@ for (let i = 0; i < features.length; i++) {
   console.log(fea);
 }
 
-// Function 
+// Function
 
-function backpackFeatures() {
-    console.log("Waterproof");
+let rain = document.getElementById("rain");
+let flex = document.getElementById("flex");
+let breath = document.getElementById("breath");
+let reflect = document.getElementById("reflect");
+
+//console.log(image);
+
+// function show created to change display on icon img to inline
+// retrieved from: https://www.geeksforgeeks.org/how-to-show-images-on-click-using-html/
+
+function show1() {
+  document.getElementById("rain").style.display = "block";
+
+  document.getElementById("button1").style.display = "inline";
 }
 
-backpackFeatures();
+console.log(show1);
+
+function show2() {
+  document.getElementById("flex").style.display = "block";
+
+  document.getElementById("button2").style.display = "inline";
+}
+
+console.log(show2);
+
+function show3() {
+  document.getElementById("breath").style.display = "block";
+
+  document.getElementById("button3").style.display = "inline";
+}
+
+console.log(show3);
+
+function show4() {
+  document.getElementById("reflect").style.display = "block";
+
+  document.getElementById("button4").style.display = "inline";
+}
+
+console.log(show4);

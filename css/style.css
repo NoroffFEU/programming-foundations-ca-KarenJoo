@@ -101,7 +101,7 @@ h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #1469bd;
   font-size: 2em;
-  margin: 0;
+  margin: 50px;
 }
 
 h2 {
@@ -153,24 +153,42 @@ h4 {
 }
 
 .silva-container h2 {
-	margin: 0 auto;
-	padding: 20px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.silva-container img {
+.silva-img {
+  object-fit: cover;
   height: 400px;
-  width: auto;
+  width: 350px;
+  margin: 0 auto;
 }
 
 .object-buttons {
   margin: 0 auto;
 }
 
-.button1,
-.button2,
-.button3,
-.button4 {
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 2rem;
+#button1,
+#button2,
+#button3,
+#button4 {
+  padding: 10px; 
+  margin-right: 10px;
+}
+
+
+.icons {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+#rain,
+#flex,
+#breath,
+#reflect {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  padding-right: 10px;
+  display: none;
 }

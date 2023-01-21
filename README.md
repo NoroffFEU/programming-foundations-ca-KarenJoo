@@ -9,6 +9,7 @@
 This repo consists of
 
 - index.html
+- object.html
 - lessontasks.js
 - object.js
 - Readme.md
@@ -69,6 +70,49 @@ for (let i = 0; i < features.length; i++) {
 }
 ```
 
+##Function show ()
+
+..
+Function show() created to change display on icon img to inline.
+
+```
+let rain = document.getElementById("rain");
+let flex = document.getElementById("flex");
+let breath = document.getElementById("breath");
+let reflect = document.getElementById("reflect");
+
+function show1() {
+  document.getElementById("rain").style.display = "block";
+
+  document.getElementById("button1").style.display = "inline";
+}
+
+console.log(show1);
+
+function show2() {
+  document.getElementById("flex").style.display = "block";
+
+  document.getElementById("button2").style.display = "inline";
+}
+
+console.log(show2);
+
+function show3() {
+  document.getElementById("breath").style.display = "block";
+
+  document.getElementById("button3").style.display = "inline";
+}
+
+console.log(show3);
+
+function show4() {
+  document.getElementById("reflect").style.display = "block";
+
+  document.getElementById("button4").style.display = "inline";
+}
+
+console.log(show4);
+```
 ..
 
 ##Object 2 "Houseplants"
@@ -119,3 +163,9 @@ console.log(backpack.material);
 - Checking what value null is
 
 `console.log(typeof lightWeight);`
+
+##Resources 
+- icon img from https://www.flaticon.com 
+- backpack img from: https://www.norsegear.no/silva-military-360-orbit-black-25l.html?gclid=Cj0KCQiAlKmeBhCkARIsAHy7WVsrzGumr0WynrsgM2ntplT8KmyQyeqLsNdUU8UjZaJRV1g_2bppDWMaAtjhEALw_wcB 
+- adding img to HTML with javascript: https://stackoverflow.com/questions/2735881/adding-images-to-an-html-document-with-javascript 
+- How to show img on Click using HTML and js: https://www.geeksforgeeks.org/how-to-show-images-on-click-using-html/ 
