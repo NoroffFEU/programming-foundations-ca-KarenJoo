@@ -40,6 +40,7 @@ This object has the following properties and types of data:
 - onSale (boolean), the backpack is currently on sale
 - lightWeight (undefined), we don't know if the backpack is lightweight because it is not stated in their description.
 - features (array), the features stated in their desctiption is that the backpack is waterproof, flexible, breathable and reflective
+- function show(), buttons to click to see icons of the backpacks features
 
 ..
 
@@ -113,6 +114,7 @@ function show4() {
 
 console.log(show4);
 ```
+
 ..
 
 ##Object 2 "Houseplants"
@@ -164,8 +166,9 @@ console.log(backpack.material);
 
 `console.log(typeof lightWeight);`
 
-##Resources 
-- icon img from https://www.flaticon.com 
-- backpack img from: https://www.norsegear.no/silva-military-360-orbit-black-25l.html?gclid=Cj0KCQiAlKmeBhCkARIsAHy7WVsrzGumr0WynrsgM2ntplT8KmyQyeqLsNdUU8UjZaJRV1g_2bppDWMaAtjhEALw_wcB 
-- adding img to HTML with javascript: https://stackoverflow.com/questions/2735881/adding-images-to-an-html-document-with-javascript 
-- How to show img on Click using HTML and js: https://www.geeksforgeeks.org/how-to-show-images-on-click-using-html/ 
+##Resources
+
+- icon img from https://www.flaticon.com
+- backpack img from: https://www.norsegear.no/silva-military-360-orbit-black-25l.html?gclid=Cj0KCQiAlKmeBhCkARIsAHy7WVsrzGumr0WynrsgM2ntplT8KmyQyeqLsNdUU8UjZaJRV1g_2bppDWMaAtjhEALw_wcB
+- adding img to HTML with javascript: https://stackoverflow.com/questions/2735881/adding-images-to-an-html-document-with-javascript
+- How to show img on Click using HTML and js: https://www.geeksforgeeks.org/how-to-show-images-on-click-using-html/
