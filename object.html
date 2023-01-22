@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding string variables to HTML</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=" />
+  </head>
+  <body>
+    <header>
+      <p>Click <a href="index.html">HERE</a> to return to lesson tasks</p>
+      <h1>Course assignment</h1>
+    </header>
+    <main>
+      <div class="silva-container">
+        <h2>The Silva backpack</h2>
+        <div class="icons">
+          <img id="rain" src="../img/rain.png" alt="icon of rain" />
+          <img id="flex" src="../img/resilience.png" alt="icon of flexible" />
+          <img id="breath" src="../img/wind.png" alt="icon of wind" />
+          <img
+            id="reflect"
+            src="../img/car-light.png"
+            alt="icon of reflective"
+          />
+        </div>
+        <img
+          class="silva-img"
+          src="img/silva.jpg"
+          alt="image of the Silva backpack"
+        />
+        <h2>Click here to see features</h2>
+        <div class="object-buttons">
+          <button type="button1" onclick="show1()" id="button1">
+            Waterproof
+          </button>
+          <button type="button2" onclick="show2()" id="button2">
+            Flexible
+          </button>
+          <button type="button3" onclick="show3()" id="button3">
+            Breatheable
+          </button>
+          <button type="button4" onclick="show4()" id="button4">
+            Reflective
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="js/object.js"></script>
+  </body>
+</html>
